@@ -8,13 +8,13 @@
             <p>Sunny</p>
         </div>
         <div class="main-weather-temperature-div">
-            <p>25&deg;</p>
+            <p>{{ weatherData?.currentWeather?.temperature }}&deg;</p>
         </div>
         <div class="main-weather-extrainfo-div">
-            <span class="main-weather-humidity-div">Humidity</span>
-            <span class="main-weather-wind-div">Wind Speed</span>
-            <span class="main-weather-pressure-div">Pressure</span>
-            <span class="main-weather-visibility-div">Visibility</span>
+            <span class="main-weather-humidity-div">Humidity {{ weatherData?.currentWeather?.humidity }}%</span>
+            <span class="main-weather-wind-div">Wind Speed {{ weatherData?.currentWeather?.windSpeed }} km/h</span>
+            <span class="main-weather-pressure-div">Feels Like {{ weatherData?.currentWeather?.feelsLike }}&deg;</span>
+            <!-- <span class="main-weather-visibility-div"> {{ weatherData?.currentWeather?.visibility }} km</span> -->
         </div>
     </div>
     <div class="saved-city-div">
